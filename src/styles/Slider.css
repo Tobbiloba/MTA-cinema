@@ -1,0 +1,22 @@
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  border: 1px solid transparent;
+  height: 16px;
+  font-size: 20px;
+  color: transparent;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+}
+
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+  /* border: 1px solid white; */
+  color: white;
+  transform: translateX(0);
+}
+.swiper-pagination-bullet {
+  background: white;
+}
+.swiper-pagination-bullet-active {
+  background: white;
+}
