@@ -42,7 +42,7 @@ const Slider = () => {
             <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
               PRE ORDER <br /> REFRESHMENT
             </h1>
-            <p className="text-[13px] lg:text-[12px]">
+            <p className="text-[13px] lg:text-[12px] mt-[1rem]">
               Lorem ipsum dolor sit amer, consecteur adipiscing elit, sel do
               eiusmod
             </p>
@@ -65,7 +65,7 @@ const Slider = () => {
               WELCOME TO <span className="text-red-500">AMTJ</span> <br />{' '}
               THEATER
             </h1>
-            <p className="text-[13px] lg:text-[12px]">
+            <p className="text-[13px] lg:text-[12px] mt-[1rem]">
               Lorem ipsum dolor sit amer, consecteur adipiscing elit, sel do
               eiusmod
             </p>
@@ -87,7 +87,7 @@ const Slider = () => {
             <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
               MOVIE PASS CLUB
             </h1>
-            <p className="text-[13px] lg:text-[12px]">
+            <p className="text-[13px] lg:text-[12px] mt-[1rem]">
               Pelllentesque in ipsum id orci porta dapibus. Mauris blandit
               aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo,
               lacinia eget consectetur sed, convallis at tellus. Vestibulum ac
