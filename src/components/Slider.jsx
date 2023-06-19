@@ -28,7 +28,7 @@ const Slider = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper w-[100vw] h-[60vh] md:h-[30rem] hover:cursor-pointer z-0"
+        className="mySwiper w-[100vw] h-[438px] md:h-[30rem] hover:cursor-pointer z-0"
       >
         <SwiperSlide
           className="flex items-center px-[3rem]  md:px-[12%]"
@@ -42,7 +42,7 @@ const Slider = () => {
             <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
               PRE ORDER <br /> REFRESHMENT
             </h1>
-            <p className="font-mono text-[15px] lg:text-[12px]">
+            <p className="text-[13px] lg:text-[12px]">
               Lorem ipsum dolor sit amer, consecteur adipiscing elit, sel do
               eiusmod
             </p>
@@ -53,7 +53,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className="flex items-center px-[3rem]  md:px-[12%]"
+          className="flex items-center px-[3rem]  md:px-[12%] "
           style={{
             backgroundImage: `url(${img2})`,
             objectFit: 'cover',
@@ -65,7 +65,7 @@ const Slider = () => {
               WELCOME TO <span className="text-red-500">AMTJ</span> <br />{' '}
               THEATER
             </h1>
-            <p className="font-mono text-[15px] lg:text-[12px]">
+            <p className="text-[13px] lg:text-[12px]">
               Lorem ipsum dolor sit amer, consecteur adipiscing elit, sel do
               eiusmod
             </p>
@@ -76,7 +76,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className="flex items-center px-[3rem]  md:px-[12%]"
+          className="flex items-center px-[3rem]  md:px-[12%] "
           style={{
             backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(${img3})`,
             objectFit: 'cover',
@@ -87,7 +87,7 @@ const Slider = () => {
             <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
               MOVIE PASS CLUB
             </h1>
-            <p className="font-mono text-[15px] lg:text-[12px]">
+            <p className="text-[13px] lg:text-[12px]">
               Pelllentesque in ipsum id orci porta dapibus. Mauris blandit
               aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo,
               lacinia eget consectetur sed, convallis at tellus. Vestibulum ac
