@@ -62,7 +62,8 @@ const Slider = () => {
         >
           <div className="w-fit h-fit">
             <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
-              WELCOME TO AMTJ <br /> THEATER
+              WELCOME TO <span className="text-red-500">AMTJ</span> <br />{' '}
+              THEATER
             </h1>
             <p className="font-mono text-[15px] lg:text-[12px]">
               Lorem ipsum dolor sit amer, consecteur adipiscing elit, sel do
