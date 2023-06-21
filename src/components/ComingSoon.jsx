@@ -37,10 +37,10 @@ const PlayingNow = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper w-[20rem] h-[20rem] md:w-[inherit] md:mt-[2rem] lg:h-[45rem] md:h-[30rem] hover:cursor-pointer z-0"
+        className="mySwiper w-[100%] h-[25rem] md:w-[inherit] mt-[2rem] lg:h-[45rem] md:h-[30rem] hover:cursor-pointer z-0"
       >
         <SwiperSlide
-          className="flex items-center px-[3rem]  md:px-[12%]"
+          className="flex items-center px-[1rem]  md:px-[12%]"
           style={{
             backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(${img1})`,
             objectFit: 'cover',
@@ -62,7 +62,7 @@ const PlayingNow = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className="flex items-center px-[3rem]  md:px-[12%] "
+          className="flex items-center px-[1rem]  md:px-[12%] "
           style={{
             backgroundImage: `url(${img2})`,
             objectFit: 'cover',
@@ -84,7 +84,7 @@ const PlayingNow = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide
-          className="flex items-center px-[3rem]  md:px-[12%] "
+          className="flex items-center px-[1rem]  md:px-[12%] "
           style={{
             backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(${img3})`,
             objectFit: 'cover',
