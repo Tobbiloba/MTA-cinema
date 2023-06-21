@@ -1,40 +1,113 @@
 import React from 'react'
-import cover1 from '../assets/cover-1.jpg'
-import cover2 from '../assets/cover-2.jpg'
+import img2 from '../assets/coming1.jpg'
+import img1 from '../assets/coming2.jpg'
+import img3 from '../assets/coming3.jpg'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+import '../styles/Slider.css'
+
+// import required modules
+import { Pagination, Navigation } from 'swiper'
+
 import TheatersIcon from '@mui/icons-material/Theaters'
-const ComingSoon = () => {
+const PlayingNow = () => {
   return (
-    <div className="px-[1rem] md:px-[10%] bg-black py-[2rem] flex flex-col lg:flex-row w-[100vw] overflow-x-hidden lg:justify-evenly lg:py-[5rem]">
-      <div>
-        <img
-          src={cover1}
-          alt="cover image"
-          className="w-[90%] md:w-[25rem] ml-[10%]"
-        />
-        <img
-          src={cover2}
-          alt="small cover image"
-          className="relative bottom-[7rem] w-[10rem] md:w-[12.5rem] lg:w-[15rem] lg:right-[4rem] lg:bottom-[12.5rem]"
-        />
-      </div>
-      <div className="relative bottom-[5rem] lg:w-[40%] lg:bottom-0 lg:pt-[10%]">
-        <h1 className="text-xl font-bold text-red-500">PLAYING</h1>
-        <h1 className="text-2xl font-mono mt-[1rem]">
-          Now in <span className="font-bold font-2xl">CINEMAS</span>
+    <div className="px-[2.2rem] md:px-[10%] bg-black py-[3rem] lg:px-[20%]">
+      <div className="w-fit">
+        <h1 className="text-red-600 font-bold text-[14px]">COMING SOON</h1>
+        <h1 className="mt-[1rem] text-2xl font-mono lg:text-4xl  lg:w-[25rem]">
+          MOVIES{' '}
+          <span className="font-sans font-bold text-4xl lg:text-6xl">
+            Coming Soon
+          </span>
         </h1>
-        <p className="text-[15px] text-slate-300 leading-8 mt-[1rem]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <button className="mt-[2rem] bg-red-600 hover:bg-black px-7 py-3 rounded-md flex items-center flex-row gap-2 font-mono">
-          <TheatersIcon />
-          MENUS
-        </button>
       </div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper w-[20rem] h-[20rem] md:w-[inherit] md:mt-[2rem] lg:h-[45rem] md:h-[30rem] hover:cursor-pointer z-0"
+      >
+        <SwiperSlide
+          className="flex items-center px-[3rem]  md:px-[12%]"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(${img1})`,
+            objectFit: 'cover',
+            backgroundSize: 'cover',
+          }}
+        >
+          <div className="w-fit h-fit">
+            <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
+              EXTRA SPACE
+            </h1>
+            <p className="text-[13px] lg:text-[12px] mt-[1rem]">
+              Lorem ipsum dolor sit amer, consecteur adipiscing elit, sel do
+              eiusmod
+            </p>
+            <button className="mt-[2rem] bg-red-600 hover:bg-black px-7 py-3 rounded-md flex items-center flex-row gap-2 font-mono">
+              <TheatersIcon />
+              ORDER TICKETS
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide
+          className="flex items-center px-[3rem]  md:px-[12%] "
+          style={{
+            backgroundImage: `url(${img2})`,
+            objectFit: 'cover',
+            backgroundSize: 'cover',
+          }}
+        >
+          <div className="w-fit h-fit">
+            <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
+              MONARCH
+            </h1>
+            <p className="text-[13px] lg:text-[12px] mt-[1rem]">
+              Lorem ipsum dolor sit amer, consecteur adipiscing elit, sel do
+              eiusmod
+            </p>
+            <button className="mt-[2rem] bg-red-600 hover:bg-black px-7 py-3 rounded-md flex items-center flex-row gap-2 font-mono">
+              <TheatersIcon />
+              ORDER TICKETS
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide
+          className="flex items-center px-[3rem]  md:px-[12%] "
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(${img3})`,
+            objectFit: 'cover',
+            backgroundSize: 'cover',
+          }}
+        >
+          <div className="w-fit h-fit">
+            <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
+              EXTRACTION 2
+            </h1>
+            <p className="text-[13px] lg:text-[12px] mt-[1rem]">
+              Pelllentesque in ipsum id orci porta dapibus. Mauris blandit
+              aliquet elit, eget tincidunt nibh pulvinar a.
+            </p>
+            <button className="mt-[2rem] bg-red-600 hover:bg-black px-7 py-3 rounded-md flex items-center flex-row gap-2 font-mono">
+              <TheatersIcon />
+              ORDER TICKETS
+            </button>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   )
 }
 
-export default ComingSoon
+export default PlayingNow
