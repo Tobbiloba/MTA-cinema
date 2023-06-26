@@ -131,6 +131,10 @@ const Movies = () => {
           return (
             <div className="w-fit mt-[6rem] md:w-[30rem]" key={item.id}>
               <img src={item.img} className="h-[30rem] md:h-[40rem] w-[100%]" />
+
+            <div className="w-[100%] mt-[6rem]" key={item.id}>
+              <img src={item.img} className="h-[30rem] w-[100%]" />
+
               <div className="mt-[2rem]">
                 <h1 className="text-slate-500 font-mono font-bold text-2xl">
                   {item.title}
