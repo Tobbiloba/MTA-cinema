@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import MenuIcon from '@mui/icons-material/Menu'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import { Link } from 'react-router-dom'
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
@@ -23,30 +24,44 @@ const Menu = () => {
           />
         </div>
         {showMenu && (
-          <div className="absolute h-[100vh] w-[60vw] top-0 right-0 bg-white flex flex-col justify-between">
+          <div className=" h-[100vh] z-20 fixed w-[60vw] top-0 right-0 bg-white flex flex-col justify-between">
             <div></div>
             <div className="text-black">
-              <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
-                Home
-              </h1>
-              <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
-                Movies
-              </h1>
-              <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
-                Calendar
-              </h1>
-              <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
-                Movie
-              </h1>
-              <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
-                Membership
-              </h1>
-              <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
-                Contact
-              </h1>
-              <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
-                About
-              </h1>
+              <Link to="/">
+                <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
+                  Home
+                </h1>
+              </Link>
+              <Link to="/movies">
+                <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
+                  Movies
+                </h1>
+              </Link>
+              <Link to="/upcoming-movies">
+                <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
+                  Calendar
+                </h1>
+              </Link>
+              <Link to="/playing-now">
+                <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
+                  Movie
+                </h1>
+              </Link>
+              <Link to="/membership">
+                <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
+                  Membership
+                </h1>
+              </Link>
+              <Link to="/contact">
+                <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
+                  Contact
+                </h1>
+              </Link>
+              <Link to="/about-us">
+                <h1 className="text-center cursor-pointer mt-4 text-xl font-mono hover:text-red-500">
+                  About
+                </h1>
+              </Link>
             </div>
             <div className="w-fit p-3 ml-[1rem] mb-[1rem] rounded-full bg-red-500 hover:bg-black">
               <ArrowForwardIcon
@@ -65,27 +80,41 @@ const Menu = () => {
         </h1>
         <div className="flex flex-row items-center ">
           <div className="text-black flex mr-[1.5rem]">
-            <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
-              Home
-            </h1>
-            <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
-              Movies
-            </h1>
-            <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
-              Calendar
-            </h1>
-            <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
-              Movie
-            </h1>
-            <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
-              Membership
-            </h1>
-            <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
-              Contact
-            </h1>
-            <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
-              About
-            </h1>
+            <Link to="/">
+              <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
+                Home
+              </h1>
+            </Link>
+            <Link to="/movies">
+              <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
+                Movies
+              </h1>
+            </Link>
+            <Link to="/calendar">
+              <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
+                Calendar
+              </h1>
+            </Link>
+            <Link to="/playing-now">
+              <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
+                Movie
+              </h1>
+            </Link>
+            <Link to="/membership">
+              <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
+                Membership
+              </h1>
+            </Link>
+            <Link to="/contact">
+              <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
+                Contact
+              </h1>
+            </Link>
+            <Link to="/about">
+              <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
+                About
+              </h1>
+            </Link>
           </div>
           <ShoppingCartIcon
             style={{ color: 'black' }}

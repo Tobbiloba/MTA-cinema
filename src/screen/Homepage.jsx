@@ -8,7 +8,7 @@ import Banner from '../components/Banner'
 
 const Homepage = () => {
   return (
-    <div className="w-[100vw] overflow-x-hidden">
+    <div className="overflow-hidden">
       <Menu />
       <Slider />
       <PlayingNow />
