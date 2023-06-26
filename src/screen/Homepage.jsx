@@ -4,6 +4,7 @@ import Slider from '../components/Slider'
 import ComingSoon from '../components/ComingSoon'
 import PlayingNow from '../components/PlayingNow'
 import Footer from '../components/Footer'
+import Banner from '../components/Banner'
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Slider />
       <PlayingNow />
       <ComingSoon />
+      <Banner />
       <Footer />
     </div>
   )
