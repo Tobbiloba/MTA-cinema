@@ -107,7 +107,7 @@ const Movies = () => {
     <div className="bg-black overflow-hidden">
       <Menu />
       <div
-        className="flex items-center px-[3rem]  md:px-[12%] h-[25rem]"
+        className="flex items-center px-[3rem]  md:px-[12%] h-[25rem] md:h-[45rem]"
         style={{
           backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(${background})`,
           objectFit: 'cover',
@@ -115,21 +115,22 @@ const Movies = () => {
         }}
       >
         <div className="w-fit h-fit">
-          <h1 className="text-4xl md:text-6xl font-bold font-mono text-slate-100">
-            PRE ORDER <br /> REFRESHMENT
+          <p className="text-red-600 mb-3 font-bold text-xl">NOW PLAYING</p>
+          <h1 className="text-4xl md:text-8xl font-bold font-mono text-slate-100">
+            NOW <span className="font-thin">PLAYING</span>
           </h1>
-          <button className="mt-[2rem] bg-red-600 hover:bg-black px-7 py-3 rounded-md flex items-center flex-row gap-2 font-mono">
+          <button className="mt-[2rem] bg-red-600 hover:bg-black text-xl font-bold px-7 py-3 rounded-md flex items-center flex-row gap-2 font-mono">
             <TheatersIcon />
-            MENUS
+            View Showtime
           </button>
         </div>
       </div>
 
-      <div className="px-[2.5rem]  md:px-[12%] flex flex-row flex-wrap py-[2rem]">
+      <div className="px-[2.5rem]  md:px-[7.5%] flex flex-row md:justify-between flex-wrap py-[2rem]">
         {object.map((item) => {
           return (
-            <div className="w-fit mt-[6rem]" key={item.id}>
-              <img src={item.img} className="h-[30rem] w-[100%]" />
+            <div className="w-fit mt-[6rem] md:w-[30rem]" key={item.id}>
+              <img src={item.img} className="h-[30rem] md:h-[40rem] w-[100%]" />
               <div className="mt-[2rem]">
                 <h1 className="text-slate-500 font-mono font-bold text-2xl">
                   {item.title}
