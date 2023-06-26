@@ -90,7 +90,7 @@ const Menu = () => {
                 Movies
               </h1>
             </Link>
-            <Link to="/calendar">
+            <Link to="/upcoming-movies">
               <h1 className="text-center cursor-pointer ml-4 text-[17px] font-mono hover:text-red-500">
                 Calendar
               </h1>
