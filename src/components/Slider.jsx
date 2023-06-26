@@ -28,7 +28,7 @@ const Slider = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper w-[100vw] h-[438px] md:h-[30rem] hover:cursor-pointer z-0"
+        className="mySwiper w-[100vw] h-[438px] md:h-[30rem] lg:h-[50rem] hover:cursor-pointer z-0"
       >
         <SwiperSlide
           className="flex items-center px-[3rem]  md:px-[12%]"

@@ -125,34 +125,35 @@ const Movies = () => {
           </button>
         </div>
       </div>
-
       <div className="px-[2.5rem]  md:px-[7.5%] flex flex-row md:justify-between flex-wrap py-[2rem]">
         {object.map((item) => {
           return (
             <div className="w-fit mt-[6rem] md:w-[30rem]" key={item.id}>
               <img src={item.img} className="h-[30rem] md:h-[40rem] w-[100%]" />
 
-            <div className="w-[100%] mt-[6rem]" key={item.id}>
-              <img src={item.img} className="h-[30rem] w-[100%]" />
+              <div className="w-[100%] mt-[6rem]" key={item.id}>
+                <img src={item.img} className="h-[30rem] w-[100%]" />
 
-              <div className="mt-[2rem]">
-                <h1 className="text-slate-500 font-mono font-bold text-2xl">
-                  {item.title}
-                </h1>
-                <p className="text-slate-300 font-mono mt-3">
-                  {item.duration} | <span>{item.pg && 'PG'}</span>
-                </p>
-                <p className="text-slate-300 font-mono mt-">
-                  Released <span>{item.date}</span>
-                </p>
-                <button className="px-6 rounded-md font-mono font-bold hover:bg-black hover:border border-red-600 hover:text-red-600 bg-red-600 py-2  mt-3">
-                  Get Ticket
-                </button>
+                <div className="mt-[2rem]">
+                  <h1 className="text-slate-500 font-mono font-bold text-2xl">
+                    {item.title}
+                  </h1>
+                  <p className="text-slate-300 font-mono mt-3">
+                    {item.duration} | <span>{item.pg && 'PG'}</span>
+                  </p>
+                  <p className="text-slate-300 font-mono mt-">
+                    Released <span>{item.date}</span>
+                  </p>
+                  <button className="px-6 rounded-md font-mono font-bold hover:bg-black hover:border border-red-600 hover:text-red-600 bg-red-600 py-2  mt-3">
+                    Get Ticket
+                  </button>
+                </div>
               </div>
             </div>
           )
         })}
       </div>
+
       <div className="relative mt-[5rem]">
         <Banner />
         <Footer />
