@@ -175,7 +175,7 @@ const Membership = () => {
                 <br />
 
                 <input type="checkbox" id="checkbox6" name="checkbox6" />
-                <label htmlFor="checkbox6">Quae Ab Illo</label>
+                <label htmlFor="checkbox6">Quae Ab Illo </label>
                 <br />
               </form>
               <button className="border border-red-500 border-solid border-2 mt-5 p-3 rounded hover:bg-[#6E42FF]  hover:border-none">
