@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
-    <div className="">
+    <div className="z-50 relative">
       <div className="lg:hidden md:px-[10%] bg-white w-[100vhw] h-[60px] md:h-[80px] px-[1.5rem] flex flex-row items-center justify-between">
         <h1 className="text-red-500 text-2xl font-mono font-bold ">
           MTA
